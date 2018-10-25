@@ -1,0 +1,70 @@
+/* By Lark VCR. "In construction" */
+
+body {
+  /* margin: 50px 50px 50px 7%; */
+  /* font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; */
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 18px;
+  line-height: 1.7;
+  padding: 1em 1em;
+  color: #161616;
+  /* background-color: #F7F7F7; */
+  background-image: radial-gradient(circle, #f7f7f7, #d4d6d1);
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+#bgCanvas {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+}
+
+#canvasDiv {
+  padding: 0;
+}
+
+.canvas {
+  margin-top: 100px;
+  text-align: right;
+  /*margin-top: 200px;
+    background-color: #FFFFFF;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: #D2DB21 #8787C1 #00DA80 #D31996;*/
+}
+
+.outline {
+  background-color: #bdbfbf;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 33px;
+  border-color: #8f9091 #593d50 #303030 #D2DB21;
+  padding: 40px;
+  box-shadow: 2px -2px 9px rgba(0, 0, 0, 0.7), 4px -4px 20px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 5px 5px 20px #00DA80; */
+}
+
+.outline:hover {
+  background-color: #161616;
+  color: #D2DB21;
+}
+
+.popUp {
+  /* position: fixed; */
+  display: none;
+  max-width: 333px;
+}
+
+.overlay {
+  visibility: hidden;
+  position: absolute;
+}
+
+#onFemmebotOverlay {
+  top: -200px;
+  left: -200px;
+  max-width: 666px;
+  background: #D31996;
+}
