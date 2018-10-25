@@ -1,26 +1,8 @@
 "use strict";
 
-let robots;
-let onRobots;
-let popperRobots;
-let vr;
-let onVr;
-let popperVr;
-let mr;
-let onMr;
-let popperMr;
-let ai;
-let onAi;
-let popperAi;
-let femmebot;
-let onFemmebotOverlay;
-
-let eraseButton;
 
 let bubbleArray = [];
 let numOfBubbles = 69;
-
-
 
 
 function setup() {
@@ -46,8 +28,8 @@ function setup() {
 
 function draw() {
   clear();
-
   noStroke();
+
   for (let i = 0; i < numOfBubbles; i++) {
     bubbleArray[i].drawBubble();
 
@@ -112,7 +94,7 @@ class Bubble {
       this.diam = random(1, 3);
       this.speedX = 0;
       this.accelX = 0;
-      this.c = color(random(222, 255), random(222, 255), random(222, 255));
+      this.c = color(random(255), random(255), random(255));
     }
   }
 }
