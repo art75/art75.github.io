@@ -1,7 +1,9 @@
 body {
   margin: 30px auto;
-  max-width: 60%;
+  width: 85%;
+  max-width: 800px;
   font-family: "Lucida Console", Monaco, monospace;
+  /* font-size: 16px; */
   line-height: 1.5;
   padding: 30px 20px;
   text-align: center;
@@ -39,7 +41,7 @@ img {
 .static-div {
   background-image: url("assets/colorDistortionBG.jpg");
   background-repeat: repeat;
-  padding: 40px;
+  padding: 25px;
   margin-bottom: 60px;
 }
 
@@ -49,7 +51,7 @@ img {
 }
 
 .black-div {
-  padding: 25px;
+  padding: 15px;
   background-color: #020407;
   color: #ffffff;
   text-align: left;
