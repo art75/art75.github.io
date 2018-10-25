@@ -5,33 +5,46 @@ body {
   line-height: 1.5;
   padding: 30px 20px;
   text-align: center;
+  background-image: url("assets/staticBG.jpg");
+  background-repeat: repeat;
+  background-color: #020407;
 }
- 
+
 h1 {
-  padding: 20px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
- 
+
 /* This changes color and removes default underline in links  */
- 
+
 a {
-color: #69CBBB;
-text-decoration: none;
+  color: #69CBBB;
+  text-decoration: none;
 }
- 
+
 /* Centers images */
- 
+
 img {
   display: block;
   margin: 0px auto;
   width: 100%;
 }
- 
-/* When you put a period in front of a CSS declaration, it indicates you are
-creating a new class. We can apply this to div elements to create different
-portfolio entries */
- 
-.portfolio-item {
-  margin-top: 60px;
+
+.static-div {
+  background-image: url("assets/colorDistortionBG.jpg");
+  background-repeat: repeat;
   padding: 40px;
-  background-color: #f7f7f7;
+  margin-bottom: 60px;
+}
+
+.static-div p, .static-div h1 {
+  background-color: #020407;
+  color: #ffffff;
+}
+
+.black-div {
+  padding: 10px;
+  background-color: #020407;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 60px;
 }

@@ -1,6 +1,6 @@
 
 // declare variables here
-let birds = 0;
+let xPos = -100;
 
 function setup() {
   // put setup code here --> this runs once upon launch
@@ -11,17 +11,14 @@ function setup() {
 
 function draw() {
 
-  birds -= 5;
-
-  console.log("there are " + birds + " birds")
-
-  // set background color in grayscale:
+  // set background color
   background(150, 0, 150);
 
-  // drawing a green ellipse at the right of the screen
-  fill(random(0, 255));
+  // drawing a green ellipse that moves from left to right of the screen
+  fill(0, 255, 0);
   strokeWeight(0);
-  ellipse(400, 200, 200, 80);
+  ellipse(xPos, 200, 200, 80);
+  xPos++;
 
 
   // drawing a blue rect that follows mouse
