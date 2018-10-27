@@ -30,6 +30,11 @@ a {
   text-decoration: none;
 }
 
+/* <a class="code-link" href="#">--></a> */
+.code-link {
+  color: #bc652b;
+}
+
 /* Centers images */
 
 img {
