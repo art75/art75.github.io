@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Video Tag</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<video width="620" controls loop>
+	  <source
+	    src="assets/dolphins_0.mp4"
+	    type="video/mp4">
+	  <source
+	    src="assets/dolphins_0.webm"
+	    type="video/webm">
+	  Your browser doesn't support HTML5 video tag.
+	</video>
+	<p>Video has controls and loops</p>
+	<video width="400" autoplay loop muted>
+	  <source
+	    src="assets/dolphins_1.mp4"
+	    type="video/mp4">
+	  <source
+	    src="assets/dolphins_1.webm"
+	    type="video/webm">
+	  Your browser doesn't support HTML5 video tag.
+	</video>
+	<p>Video has no controls, but autoplays. <br> Autoplay does not work in latest Chrome update unless video is muted</p>
+	<!-- give your video a custom class to style it independantly of others -->
+	<video class="snake-vid" width="400" controls loop>
+			<source
+				src="assets/snake.mp4"
+				type="video/mp4">
+			<source
+				src="assets/snake.webm"
+				type="video/webm">
+			Your browser doesn't support HTML5 video tag.
+		</video>
+		<p>You can give your video a custom class to style it differently than others. </p>
+	</div>
+</body>
+
+</html>
