@@ -4,12 +4,14 @@ body {
   text-align: center;
   width: 60%;
   margin: 60px auto;
+  font-family: "Courier New", Courier, monospace;
 }
 
 
 h1 {
   color: pink;
   background-color: black;
+  font-family: 'Spicy Rice', cursive;
 }
 
 h1:hover {
