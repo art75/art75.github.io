@@ -1,0 +1,74 @@
+body {
+  background-image: url("../assets/colorDistortionBG.jpg");
+  color: blue;
+  text-align: center;
+  width: 60%;
+  margin: 60px auto;
+}
+
+
+h1 {
+  color: pink;
+  background-color: black;
+}
+
+h1:hover {
+  background-color: grey;
+}
+
+.black-div{
+  text-align: left;
+  background-color: black;
+  padding: 30px;
+  border: 5px solid grey;
+  margin: 50px;
+}
+
+.big-text {
+  font-size: 24px;
+}
+
+/* This is the style for the dropdown menu!*/
+
+    /* This is the style for top title button: */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 25px;
+        font-size: 45px;
+        border: none;
+      }
+
+      /* This is the style for the dropdown menu position*/
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+
+        /* This is the style for the dropdown menu content options*/
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 200px;
+          z-index: 1;
+        }
+
+        /* This is the style for the dropdown menu content text*/
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          font-size: 45px;
+          text-decoration: none;
+          display: block;
+        }
+
+        /* This is the style for the dropdown menu hover colors*/
+        .dropdown-content a:hover {background-color: #ddd;}
+
+        .dropdown:hover .dropdown-content {display: block;}
+
+        .dropdown:hover .dropbtn {background-color: #3e8e41;}
+/* #heading {
+  background-color: yellow;
+} */
