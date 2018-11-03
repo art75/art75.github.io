@@ -1,8 +1,8 @@
 "use strict";
 
 
-let bubbleArray = [];
-let numOfBubbles = 69;
+let pixelArray = [];
+let numOfPixels = 69;
 
 
 function setup() {
@@ -12,9 +12,9 @@ function setup() {
   frameRate(30);
 
 
-  // bubble animation
-  for (let i = 0; i < numOfBubbles; i++) {
-    bubbleArray.push(new Bubble());
+  // pixel animation
+  for (let i = 0; i < numOfPixels; i++) {
+    pixelArray.push(new Pixel());
   }
 
   // media query event handler
@@ -30,12 +30,12 @@ function draw() {
   clear();
   noStroke();
 
-  for (let i = 0; i < numOfBubbles; i++) {
-    bubbleArray[i].drawBubble();
+  for (let i = 0; i < numOfPixels; i++) {
+    pixelArray[i].drawPixel();
 
-    bubbleArray[i].moveBubble();
+    pixelArray[i].movePixel();
 
-    bubbleArray[i].checkBounds();
+    pixelArray[i].checkBounds();
   }
 
 }
@@ -53,7 +53,7 @@ function WidthChange(mq) {
 }
 
 
-class Bubble {
+class Pixel {
   constructor() {
     this.x = random(0, windowWidth);
     this.y = random(0, windowHeight);
@@ -66,13 +66,13 @@ class Bubble {
     this.c = color(random(255), random(255), random(255));
   }
 
-  drawBubble() {
+  drawPixel() {
     noStroke();
     fill(this.c);
     rect(this.x, this.y, this.diam, this.diam);
   }
 
-  moveBubble() {
+  movePixel() {
     this.y = this.y + this.speedY;
     this.speedY = this.speedY + this.accelY;
 
