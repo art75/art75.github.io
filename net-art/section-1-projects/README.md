@@ -31,8 +31,8 @@
 [**Gabriel Venegas <- Click for Full Website**](https://slurpee12.github.io/netArt/index.html)
 <iframe src="https://slurpee12.github.io/netArt/index.html" width="800" height="400"></iframe>
 
-[**Berenice Cortes <- Click for Full Website**]()
-<iframe src="" width="800" height="400"></iframe>
+[**Berenice Cortes <- Click for Full Website**](https://berecortesc.github.io/netart/index.html)
+<iframe src="https://berecortesc.github.io/netart/index.html" width="800" height="400"></iframe>
 
 [**Anthony Valdovinos <- Click for Full Website**](https://tonyvaldo.github.io/Project3-75/)
 <iframe src="https://tonyvaldo.github.io/Project3-75/" width="800" height="400"></iframe>
