@@ -62,8 +62,8 @@
 [**Nicole Barakat<- Click for Full Website**](https://rosedye.github.io/netart/index)
 <iframe src="https://rosedye.github.io/netart/index" width="800" height="400"></iframe>
 
-[**Leon Li <- Click for Full Website**]()
-<iframe src="" width="800" height="400"></iframe>
+[**Leon Li <- Click for Full Website**](https://whosleon.github.io/netart/)
+<iframe src="https://whosleon.github.io/netart/" width="800" height="400"></iframe>
 
 [**Joshua Harper <- Click for Full Website**]()
 <iframe src="" width="800" height="400"></iframe>
