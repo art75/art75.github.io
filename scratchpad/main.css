@@ -1,3 +1,59 @@
+body {
+  background-color: #111111;
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 60px;
+  /* background-image: url("../images/project2.png"); */
+  background-repeat: repeat;
+  line-height: 1.6;
+  background-image: url("../assets/staticBG.jpg");
+  /* background-image: linear-gradient(red, yellow); */
+}
+
 h1 {
   color: pink;
+  font-family: 'Righteous', cursive;
+}
+
+img {
+  width: 100%;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.shadow {
+  box-shadow: 10px 10px 30px 5px #00000055;
+}
+
+#toggle-text {
+  display: none;
+  /* visibility: hidden; */
+}
+
+.header {
+  margin: 40px;
+  padding: 60px;
+  border: 2px solid black;
+  background-color: purple;
+  text-align: center;
+}
+
+.subheading {
+  margin: 40px 10px 60px 100px;
+  padding: 60px;
+  border: 5px solid purple;
+  background-color: lavender;
+  text-align: center;
+  background-image: url("../images/project2.png");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.portfolio-item {
+  margin: 40px;
+  padding: 60px;
+  border: 2px solid black;
+  background-color: white;
 }
