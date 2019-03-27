@@ -4,33 +4,47 @@
 
 let carX = 50;
 let vroom;
+let carSpeed = 3;
+let carAcc = .5;
+let raceStarted = false;
 
 
 function setup() {
   createCanvas(500, 500);
+
   vroom = new p5.Oscillator('square');
-  vroom.start();
+
+
 }
 
 function draw() {
   background(150, 50, 255, 80);
 
+  // make start button
+  rect(0, height - 50, 50, 50);
+
   // tie sound frequence to carX
   vroom.freq(carX);
 
-  // Below are two nested if statements
-  // First is timer to start moving car after 120 frames = 2 seconds
-  // Second controls speed: when car hits edge (500px), it resets
-  // when carX hits 300, speed it up, increasing by 6
-  // otherwise have it increase by 3
 
-  if (frameCount > 120) {
+
+
+  // check to see if mouse is pressed inside box
+  // move this into global mousePressed to avoid multi-start/stop
+  if (mouseIsPressed && mouseX >= 0 && mouseX <= 50 && mouseY <= height && mouseY >= height - 50) {
+    raceStarted = !raceStarted;
+    vroom.start();
+    vroom.amp(.05);
+  }
+
+
+  if (raceStarted === true) {
     if (carX >= 500) {
       carX = -50;
-    } else if (carX >= 300) {
-      carX += 6;
+      carSpeed = 3;
     } else { // otherwise it's just increasing by 3
-      carX += 3;
+      carSpeed += carAcc;
+      carX += carSpeed;
     }
 
   }
@@ -48,5 +62,5 @@ function draw() {
 
 // mute it with mouse click!
 function mousePressed() {
-  vroom.stop();
+  // vroom.stop();
 }
