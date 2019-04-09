@@ -1,0 +1,64 @@
+body {
+  margin: 30px auto;
+  width: 85%;
+  max-width: 800px;
+  font-family: "Lucida Console", Monaco, monospace;
+  /* font-size: 16px; */
+  line-height: 1.5;
+  padding: 30px 20px;
+  text-align: center;
+  background-image: url("assets/staticBG.jpg");
+  background-repeat: repeat;
+  background-color: #020407;
+}
+
+#bgCanvas {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -2;
+}
+
+h1 {
+  padding: 10px 0px 10px 0px;
+}
+
+/* This changes color and removes default underline in links  */
+
+a {
+  color: #69CBBB;
+  text-decoration: none;
+}
+
+/* <a class="code-link" href="#">--></a> */
+.code-link {
+  color: #bc652b;
+}
+
+/* Centers images */
+
+img {
+  display: block;
+  margin: 0px auto;
+  width: 100%;
+}
+
+.static-div {
+  background-image: url("assets/colorDistortionBG.jpg");
+  background-repeat: repeat;
+  padding: 25px;
+  margin-bottom: 60px;
+}
+
+.static-div p, .static-div h1 {
+  background-color: #020407;
+  color: #ffffff;
+}
+
+.black-div {
+  padding: 15px;
+  background-color: #020407;
+  color: #ffffff;
+  text-align: left;
+  margin-bottom: 60px;
+}
